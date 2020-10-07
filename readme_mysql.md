@@ -200,8 +200,8 @@ Records: 19782  Deleted: 0  Skipped: 0  Warnings: 0
 
 在代码的三处 **pymysql.connect** 处的第一个参数的地方，将 **localhost** 改为服务机的ip地址即可在同一局域网内使用只安装了MySQL-server的客户机进行访问，该客户端在镜像中已经配置好。经过实验，MySQL装在本地中，可以通过容器中的MySQL-server进行访问。
 
-
-
+https://pan.baidu.com/s/1tAQ3Yn9QzCmXaG5weo7M6A  提取码：7ldt
+上面链接中有：MySQL安装包、geoxjhk.txt的数据库文件
 
 
 
