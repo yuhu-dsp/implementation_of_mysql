@@ -50,7 +50,7 @@ sudo apt-get update
 apt-get install libaio1 libaio-dev
 ```
 
-![1602043706843](C:\Users\yuhu\AppData\Roaming\Typora\typora-user-images\1602043706843.png)
+![](https://github.com/yuhu-dsp/implementation_of_mysql/blob/main/images/1602043706843.png)
 
 ​	1.7、 修改 **/usr/local/mysql** 当前目录的用户
 
@@ -112,7 +112,7 @@ sysv-rc-conf --list
 
 ​	1.13、使用指令 **service mysql start** 启动MySQL服务，并使用指令 **mysql -uroot -p** 打开输入密码的界面，并将 1.6 步生成的密码输入其中，开启 MySQL 终端
 
-![1602043828533](C:\Users\yuhu\AppData\Roaming\Typora\typora-user-images\1602043828533.png)
+![](https://github.com/yuhu-dsp/implementation_of_mysql/blob/main/images/1602043828533.png)
 
 ​	1.14、 在MySQL终端中输入指令
 
@@ -124,7 +124,7 @@ quit;
 
 ​	1.15、下次在终端就可以使用指令 **mysql -uroot -p131220** 进入了，不行就先 **service mysql start**
 
-![1602044369625](C:\Users\yuhu\AppData\Roaming\Typora\typora-user-images\1602044369625.png)
+![](https://github.com/yuhu-dsp/implementation_of_mysql/blob/main/images/1602044369625.png)
 
 ​				退出后在终端输入以下指令建立软连接
 
@@ -147,7 +147,7 @@ flush privileges;
 
 [教程2](https://blog.csdn.net/xk_coder/article/details/84644045)
 
-![1602045819648](C:\Users\yuhu\AppData\Roaming\Typora\typora-user-images\1602045819648.png)
+![](https://github.com/yuhu-dsp/implementation_of_mysql/blob/main/images/1602045819648.png)
 
 **3、MySQL数据库导入已有的数据**
 
@@ -194,9 +194,9 @@ Records: 19782  Deleted: 0  Skipped: 0  Warnings: 0
 
 **4、查看本机的 ip 地址，并更改客户机上访问MySQL代码的 ip 地址部分**
 
-![1602070823405](C:\Users\yuhu\AppData\Roaming\Typora\typora-user-images\1602070823405.png)
+![](https://github.com/yuhu-dsp/implementation_of_mysql/blob/main/images/1602070823405.png)
 
-![1602071063845](C:\Users\yuhu\AppData\Roaming\Typora\typora-user-images\1602071063845.png)
+![](https://github.com/yuhu-dsp/implementation_of_mysql/blob/main/images/1602071063845.png)
 
 在代码的三处 **pymysql.connect** 处的第一个参数的地方，将 **localhost** 改为服务机的ip地址即可在同一局域网内使用只安装了MySQL-server的客户机进行访问，该客户端在镜像中已经配置好。经过实验，MySQL装在本地中，可以通过容器中的MySQL-server进行访问。
 
