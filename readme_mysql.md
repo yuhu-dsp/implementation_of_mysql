@@ -110,7 +110,8 @@ sysv-rc-conf --list
 
 ​				**export PATH=$PATH:/usr/local/mysql/bin:/usr/local/mysql/lib**
 
-​				最后用指令 **source /etc/profile** 来刷新
+​				最后用指令 **source /etc/profile** 来刷新，如果出现：**Unit mysql.service not found** ，则 **systemctl enable mysql.service** ，**sudo /etc/init.d/mysql start** 
+ 
 
 ​	1.13、使用指令 **service mysql start** 启动MySQL服务，并使用指令 **mysql -uroot -p** 打开输入密码的界面，并将 1.6 步生成的密码输入其中，开启 MySQL 终端
 
